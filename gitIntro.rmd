@@ -24,6 +24,7 @@ type "touch filename.fileformat"
 
 # add file to the git
 * type "git add filename.fileformat". "git add ." means add all the files; "gitadd.fileformat" means add all the files with the selected format
+- use "git add /foldername" to add a folder 
 * use "git status" to check status
 
 # remove file from the git(before commit)
@@ -33,3 +34,22 @@ type "touch filename.fileformat"
 * type "git commit" in the console, then a window will pop-out and press "I" on the keyborad which enables you to modify the text. Remove the # in front of the "Initial commit", then press "esc" and type ":wq" and the files are commited.
 * shortcut to commit a modified file
   * "git commit -m 'changed filename.fileformat'"
+  * or "git commit -m 'another change'" to comiit all the changes
+# ignore some files
+type"touch .gitignore" to create a .gitignore file, use an editor to open it and type in the filenames which you want to ignore when operation apply
+
+# create a branch
+- "git branch branchname"
+- switch to a branch/master: "git checkout branchname/master".
+
+# merge branch to master
+in the master, type "git merge barnchname"
+
+# create a repository and attach ur folder to it
+log in github to create a new repository. Once created a URL of ur repository will be generated and u can use "git remote add origin URL" to attach your folder to the URL and use "git push -u origin master" to push all the files in the folder to repository
+
+# update local master(if you have co-wokers)
+"git pull" to get update local master from remote master 
+
+#download a repository
+git bash a new folder and type"git clone repository's URL"
