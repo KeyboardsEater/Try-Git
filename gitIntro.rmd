@@ -1,0 +1,35 @@
+---
+title: Basic git bash command
+date: "2018/2/23"
+output:
+ html_document:
+    fig_width: 10
+    fig_height: 7
+    toc: yes
+    number_sections : yes
+    code_folding: show
+---
+# Initialise a git
+"git init"
+
+# Choose working folder
+create a folder, right-click and select "git bash".
+
+# create file
+type "touch filename.fileformat"
+
+# configure/change account 
+- type "git config --global user.name 'user name'"
+- tye "git config -- global user.email 'user email'"
+
+# add file to the git
+* type "git add filename.fileformat". "git add ." means add all the files; "gitadd.fileformat" means add all the files with the selected format
+* use "git status" to check status
+
+# remove file from the git(before commit)
+* "git rm --cached filename.format"
+
+# commit file to the git
+* type "git commit" in the console, then a window will pop-out and press "I" on the keyborad which enables you to modify the text. Remove the # in front of the "Initial commit", then press "esc" and type ":wq" and the files are commited.
+* shortcut to commit a modified file
+  * "git commit -m 'changed filename.fileformat'"
